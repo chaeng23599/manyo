@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ma:nyo</title>
+    <script src="../script/jquery-1.12.4.js"></script>
+    <script src="../js/app.js"></script>
+    <link rel="stylesheet" href="../css/all.css">
+</head>
+<body>
+    <div class="header"></div>
+
+    <div class="nav">
+        <div class="bars"><img src="../images/x.png" alt=""></div>
+        <ul>
+            <li><a href="./brand.html">브랜드</a></li>
+            <li><a href="./all.html">전체 카테고리</a></li>
+            <li><a href="./event.html">이벤트</a></li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <ul>
+            <li>
+                <div class="item">
+                    <div class="item_photo">
+                        <a href="./item_1.html">
+                            <img src="../images/product_1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="item_info">
+                        <p>갈락토미 나이아신 에센스 50ml 더블 <br> 세트 (+증정)</p>
+                        <span class="w1">58,000원</span>
+                        <span class="w2">31,900원</span>
+                        <span class="w3">45%</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item">
+                    <div class="item_photo">
+                        <img src="../images/product_2.png" alt="">
+                    </div>
+                    <div class="item_info">
+                        <p>[대용량] 퓨어 클렌징 오일 400ml <br><br></p>
+                        <span class="w1">49,000원</span>
+                        <span class="w2">21,870원</span>
+                        <span class="w3">55%</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item">
+                    <div class="item_photo">
+                        <img src="../images/product_3.png" alt="">
+                    </div>
+                    <div class="item_info">
+                        <p>갈락토미 클리어스킨 토너&크림 세트 <br>(+증정) </p>
+                        <span class="w1">64,000원</span>
+                        <span class="w2">35,200원</span>
+                        <span class="w3">45%</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item">
+                    <div class="item_photo">
+                        <img src="../images/product_4.png" alt="">
+                    </div>
+                    <div class="item_info">
+                        <p>비피다 바이옴 콤플렉스 앰플 50ml <br><br> </p>
+                        <span class="w1">35,000원</span>
+                        <span class="w2">21,000원</span>
+                        <span class="w3">40%</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item">
+                    <div class="item_photo">
+                        <img src="../images/product_5.png" alt="">
+                    </div>
+                    <div class="item_info">
+                        <p>[기획세트] 퓨어&딥 클렌징 폼 100mlX3 </p>
+                        <span class="w1">42,000원</span>
+                        <span class="w2">15,600원</span>
+                        <span class="w3">63%</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item">
+                    <div class="item_photo">
+                        <img src="../images/product_6.png" alt="">
+                    </div>
+                    <div class="item_info">
+                        <p>파데프리 선크림 50ml(+증정) <br><br></p>
+                        <span class="w1">28,000원</span>
+                        <span class="w2">14,560원</span>
+                        <span class="w3">48%</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item">
+                    <div class="item_photo">
+                        <img src="../images/product_7.png" alt="">
+                    </div>
+                    <div class="item_info">
+                        <p>파데프리 선크림 모이스처 <br>50ml(+증정)</p>
+                        <span class="w1">28,000원</span>
+                        <span class="w2">14,560원</span>
+                        <span class="w3">48%</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item">
+                    <div class="item_photo">
+                        <img src="../images/product_8.png" alt="">
+                    </div>
+                    <div class="item_info">
+                        <p>판테토인 에센스 토너 200ml <br><br></p>
+                        <span class="w1">32,000원</span>
+                        <span class="w2">17,600원</span>
+                        <span class="w3">45%</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item">
+                    <div class="item_photo">
+                        <img src="../images/product_9.png" alt="">
+                    </div>
+                    <div class="item_info">
+                        <p>갈락토미 클리어스킨 패드 <br>60매</p>
+                        <span class="w1">22,000원</span>
+                        <span class="w2">12,100원</span>
+                        <span class="w3">45%</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div id="btn"><a href="#x">더보기</a></div>
+
+    </div>
+
+    <div class="footer"></div>
+
+    <script>
+        $('.main ul').find('li').slice(0, 4).show()
+        $('#btn').on('click', function () {
+            $('.main').find('li:hidden').slice(0, 4).show()
+        })        
+    </script>
+</body>
+
+
+</html>

@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+li {
+    text-decoration: none;
+    color: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* header */
+
+.header {
+    height: 110px;
+    width: 100%;
+    padding: 0 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    background-color: #fff;
+    z-index: 100;
+}
+
+.bars {
+    width: 100px;
+    cursor: pointer;
+}
+
+.top_menu{
+    width: 200px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;    
+    padding-right: 50px;   
+    gap: 30px;
+}
+
+.gnb{
+    display: flex;
+    width: 100%;
+    font-weight: bold;
+}
+
+.gnb ul {
+    display: flex;
+    gap: 50px;
+}
+
+.nav {
+    width: 500px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: -500px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    transition: all 0.3s;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
+}
+
+.nav li {
+    padding: 0 70px;
+}
+  
+.nav li a {
+display: block;
+font-size: 18px;
+padding: 20px 18px;
+border-bottom: 1px solid #ddd;
+color: #666;
+}
+
+.nav .bars {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    
+}
+
+
+/* main */
+
+.main {
+    /* width: 1920px; */
+    /* background-color: #666; */
+}
+
+.main h2 {
+    padding: 30px;
+}
+
+.left {
+    position: fixed;
+    background-color: #ddd;
+    width: 800px;
+    display: inline-block;    
+    min-height: 100vh;
+    padding-top: 200px;
+}
+
+.left img {
+    object-fit: cover;
+    width: 80%;
+    /* height: auto; */
+    object-position: bottom;
+}
+
+.right {
+    width: 1000px;
+    position: absolute;
+    top: 200px;
+    right: 50px;
+}
+
+.right h2 {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-bottom: #666 1px solid;
+    color: darkred;
+    font-weight: bold;
+ }
+
+.info_box {
+    padding: 10px;
+}
+
+.info_box h3 {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+}
+
+.prd_en {
+    font-family: 'Charm', cursive;
+    font-weight: normal;
+}
+
+.price {
+    font-size: 30px;
+    color: darkred;
+    font-weight: bold;
+    padding: 50px 0;
+}
+
+.item_detail_list ul{
+    width: 100%;
+    height: 300px;
+    margin-top: 30px;
+}
+
+.item_detail_list li{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.item_detail_list li:last-child {
+    border-bottom: 2px solid #ddd;
+}
+.item_detail_list li .bold{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.right img{
+    align-items: center;
+}
+
+
+
+

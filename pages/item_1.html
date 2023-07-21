@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제품 상세보기</title>
+    <script src="../script/jquery-1.12.4.js"></script>
+    <script src="../js/app.js"></script>
+    <link rel="stylesheet" href="../css/item.css">
+</head>
+<body>
+    <div class="header"></div>
+
+    <div class="nav">
+        <div class="bars"><img src="../images/x.png" alt=""></div>
+        <ul>
+            <li><a href="./brand.html">브랜드</a></li>
+            <li><a href="./all.html">전체 카테고리</a></li>
+            <li><a href="./event.html">이벤트</a></li>
+
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="left">
+            <img src="../images/item_1.png" alt="">
+        </div>
+
+        <div class="right">
+            <h2>상품설명</h2>
+            <div class="info_box">
+                <h3>
+                    <span class="prd_en">Galactomy Niacin Essence</span>
+                    <span class="prd_ko">갈락토미 나이아신 에센스 50ml 더블 세트 (+증정)</span>
+                </h3>
+                <div class="item_detail_list">
+                    <span class="price">31,900원</span>
+                    <ul>
+                        <li>
+                            <span class="bold">오늘출발</span>
+                            <span>오후 2시 이전 구매 시 </span>
+                        </li>
+                        <li>
+                            <span class="bold">용량</span>
+                            <span>50ml</span>
+                        </li>
+                        <li>
+                            <span class="bold">제조일자</span>
+                            <span>2022.12.02</span>
+                        </li>
+                        <li>
+                            <span class="bold">사용기한</span>
+                            <span>제조일로부터 3년,개봉 후 12개월</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <img src="../images/230217_Galactomy_Essence_1200_01_111622.jpg" alt="">
+        </div>
+
+    </div>
+    <div class="footer"></div>
+    <script>
+        $('.bars').on('click', function () {
+                $('.nav').css('left','0px')
+        });
+
+        $('.nav .bars').on('click', function () {
+                $('.nav').css('left','-500px')
+        });
+    </script>
+</body>
+</html>
