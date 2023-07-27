@@ -22,19 +22,44 @@ a {
 
 /* header */
 
-.header {
+.header{
+    background-color: #fff;
     height: 110px;
     width: 100%;
     padding: 0 100px;
     position: fixed;
     top: 0;
-    left: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 30px;
-    background-color: #fff;
-    z-index: 100;
+    z-index: 90;
+}
+
+.header .bounce {
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    background-image: url('../images/icon-kakao-sync.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 176px;
+    padding: 10px;
+    animation: motion 0.6s linear 0s infinite alternate;
+    display: none;
+}
+
+@keyframes motion {
+    0%{top: 0;}
+    100%{top: 4px;}
+}
+
+.header .bounce p {
+    font-size: 11px;
+    font-weight: bold;
 }
 
 .bars {
@@ -46,15 +71,31 @@ a {
     width: 200px;
     justify-content: space-between;
     display: flex;
-    align-items: center;    
-    padding-right: 50px;   
-    gap: 30px;
+    align-items: center; 
+    padding-right: 40px;   
+    margin-right: 70px;
+    z-index: 90;
+}
+
+.top_menu img {
+    width: 80%;
+}
+
+.header .line{
+    position: absolute;
+    top: 30px;
+    right: 289px;
+    width: 190px;
+    height: 43px;
+    border: none;
+    border-bottom: 1px solid #333;
+    outline: none;
 }
 
 .gnb{
     display: flex;
     width: 100%;
-    font-weight: bold;
+    font-size: 17px;    
 }
 
 .gnb ul {
@@ -64,7 +105,7 @@ a {
 
 .nav {
     width: 500px;
-    background-color: #fff;
+    background-color: #ddd;
     position: fixed;
     top: 0;
     left: -500px;
@@ -72,6 +113,7 @@ a {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: #fff;
     justify-content: center;
     transition: all 0.3s;
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
@@ -90,9 +132,9 @@ color: #666;
 }
 
 .nav .bars {
-    position: absolute;
-    top: 50px;
-    left: 100px;
+position: absolute;
+top: 50px;
+left: 100px;
     
 }
 

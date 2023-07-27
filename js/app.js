@@ -3,6 +3,18 @@ $(function () {
     $('.header').load('../inc/header.html')
     // $('.footer').load('../inc/footer.html')
 
+    $('.sc_top').on('click', function () {
+        $('html, body').animate({ scrollTop: 0 }, 'slow')
+    })
+
+    $('.sc_bot').on('click', function () {
+        $('html, body').animate({ scrollTop: 2800 }, 'slow')
+    })
+
+    $(window).scroll(function(){
+        // $('.header .bounce').hide()
+    })
+
     // slide
     $('.slide').slick({
         dots: false,
@@ -11,6 +23,8 @@ $(function () {
         autoplay: true,
         autoplaySpeed: 5000,
     });
+
+
 
 
     $('.items ul').slick({
@@ -49,7 +63,10 @@ $(function () {
         // settings: "unslick"
         // instead of a settings object
         ]
+
+        // $('.arrows_item span').css('width','1520px')
     });
+
 
     $('.bars').on('click', function () {
         $('.nav').css('left','0px')
@@ -59,50 +76,14 @@ $(function () {
         $('.nav').css('left','-500px')
     });
 
-    $(document).ready(function(){
-		$('.rolling ul li').marquee({
-            speed: 80, // 속도
-            gap: 100, // 간격
-            delayBeforeStart: 0, // 시작 delay값
-            direction: 'left', // 방향
-            duplicated: true, // 선택 영역 복제
-            pauseOnHover: true // hover시 일시중지 여부
-        });
-	});
-})
 
-$('.b_slide ul').slick({
-    dots: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    responsive: [
-    {
-        breakpoint: 1024,
-        settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
+
+    $('.brand .b_slide ul').slick({
+        dots: false,
         infinite: true,
-        dots: true
-        }
-    },
-    {
-        breakpoint: 600,
-        settings: {
+        speed: 300,
         slidesToShow: 1,
-        slidesToScroll: 1
-        }
-    },
-    {
-        breakpoint: 480,
-        settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-        }
-    }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-    ]
-});
+        centerMode: false,
+        variableWidth: true
+      });
+})
