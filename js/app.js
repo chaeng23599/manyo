@@ -1,7 +1,7 @@
 $(function () {
     // // load page
     $('.header').load('../inc/header.html')
-    // $('.footer').load('../inc/footer.html')
+    $('.footer').load('../inc/footer.html')
 
     $('.sc_top').on('click', function () {
         $('html, body').animate({ scrollTop: 0 }, 'slow')
@@ -24,9 +24,8 @@ $(function () {
         autoplaySpeed: 5000,
     });
 
-
-
-
+    
+    
     $('.items ul').slick({
         dots: false,
         nextArrow : $('.next_item'),
@@ -39,17 +38,17 @@ $(function () {
         {
             breakpoint: 1024,
             settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
             dots: true
-            }
-        },
+        }
+    },
         {
             breakpoint: 600,
             settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
+                slidesToShow: 2,
+                slidesToScroll: 2
             }
         },
         {
@@ -57,15 +56,29 @@ $(function () {
             settings: {
             slidesToShow: 1,
             slidesToScroll: 1
-            }
+        }
         }
         // You can unslick at a given breakpoint now by adding:
         // settings: "unslick"
         // instead of a settings object
-        ]
-
-        // $('.arrows_item span').css('width','1520px')
+    ]
     });
+
+    console.log($('.items ul li:first-child').attr('aria-hidden'))
+
+    var yi = $('.items ul li:first-child').attr('arria-hidden');
+
+        if(yi = true) {
+                $('.arrows_item span').addClass('fill')
+            } else {
+                $('.arrows_item span').removeClass('fill')
+        }
+    
+    
+
+    // $('.items ul').on("slick",function(){
+    //     $('.arrows_item span').toggleClass('fill')
+    // })
 
 
     $('.bars').on('click', function () {
@@ -86,4 +99,6 @@ $(function () {
         centerMode: false,
         variableWidth: true
       });
+
+
 })

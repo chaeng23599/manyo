@@ -157,7 +157,6 @@ left: 100px;
     bottom: 80px;
     transform: translateX(827px);
     z-index: 9;
-    z-index: 88;
 }
 
 .rel {
@@ -352,8 +351,13 @@ left: 100px;
     width: 760px;
     height: 3px;
     background-color: #B60217;
+    transition: 0.3s;
 }
 
+.arrows_item .fill{
+    width: 1520px;
+    transition: 0.3s;
+}
 .arrows_item img{
     width: 70%;
 }
@@ -366,8 +370,8 @@ left: 100px;
 
 .monthly {
     display: flex;
-    padding: 100px;
-    width: 1590px;
+    padding: 100px 0;
+    width: 1520px;
     margin: 0 auto;
     gap: 30px;
 }
@@ -540,10 +544,14 @@ left: 100px;
     padding-bottom: 20px;
     color: #B60217;
 }
+
+/* footer */
+
 .blank {
     content: '';
     width: 100%;
     height: 400px;
+    z-index: 0;
 }
 
 .footer_wrap {
@@ -553,14 +561,91 @@ left: 100px;
     left: 50%;
     transform: translateX(-50%);
     background-color: #B60217;
-    padding: 120px;
-    margin: 0 auto;
-    z-index: -5;
+    padding: 60px;
+    /* z-index: -5; */
 }
 
 .footer {
-    max-width: 1920px;
-    width: 100%;
-    background-color: #B60217;
     margin: 0 auto;
+    width: 1920px;
+    background-color: #B60217;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.footer .left .text_box {
+    /* padding: 40px 0; */
+}
+
+.footer .left .text_box h4{
+    padding: 20px 0;
+    color: #fff;
+}
+
+.footer .left .text_box p {
+    padding: 20px 0;
+    color: #fff;
+}
+
+.footer .right .gnb{
+    width: 400px;
+    position: absolute;
+    bottom: 80px;
+    right: 200px;
+    height: 50px;
+}
+
+.footer .right .gnb .tit{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border: 1px solid #bcbcbc;
+    padding: 12px 19px;
+    font-size: 15px;
+    font-weight: bold;
+    width: 100%;
+    align-items: center;
+    cursor: pointer;
+    z-index: 9;
+}
+
+
+.footer .right .gnb .tit img{
+
+    transition: 0.6s;
+    transform: rotate(0);
+}
+
+.footer .right .gnb .tit .active{
+    transform: rotate(180deg);
+    transition: 0.5s;
+}
+
+.footer .right .gnb ul{
+    position: absolute;
+    bottom: 50px;
+    display: block;
+    background-color: #fff;
+    width: 100%;
+    padding: 8px 0;
+    display: none;
+}
+.footer .right .gnb ul li {
+    padding: 8px 20px;
+}
+
+.footer .right .gnb ul li a {
+    display: block;
+}
+
+.footer .right .sns {
+    width: 140px;
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 15px;
+    right: 200px;
+    align-items: center;
 }
