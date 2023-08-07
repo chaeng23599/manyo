@@ -64,9 +64,8 @@ $(function () {
     ]
     });
 
-    console.log($('.items ul li:first-child').attr('aria-hidden'))
 
-    var yi = $('.items ul li:first-child').attr('arria-hidden');
+    var yi = $('.items ul li:first-child').hasClass('slick-active');
 
         if(yi = true) {
                 $('.arrows_item span').addClass('fill')
