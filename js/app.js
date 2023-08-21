@@ -26,7 +26,7 @@ $(function () {
 
     
     
-    $('.items ul').slick({
+    $('').slick({
         dots: false,
         nextArrow : $('.next_item'),
         prevArrow : $('.prev_item'),
@@ -64,6 +64,12 @@ $(function () {
     ]
     });
 
+    new Swiper('.items ul', {
+        // 다양한 옵션 설정, 
+        // 아래에서 설명하는 옵션들은 해당 위치에 들어갑니다!!
+        slidesPerView : 'auto',
+        spaceBetween : 2, 
+    })
 
     var yi = $('.items ul li:first-child').hasClass('slick-active');
 
